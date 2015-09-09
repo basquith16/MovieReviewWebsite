@@ -11,11 +11,11 @@ body {
 }
 
 figcaption{
-  margin: 60px 0 0 -150px;
+  margin: 50px 0 0 -120px;
 }
 
 .odd {
-  margin: 71px 0 0 -178px;
+  margin: 40px 0 0 -115px;
 }
 
 body::after {
@@ -44,13 +44,12 @@ header {
   flex-direction: row;
   font-family: Orbitron;
   color: white;
-  font-size: 40px;
+  font-size: 28px;
   text-shadow: 12px 12px red;
-  width: 100%;
   justify-content: center;
   border: 5px solid black;
   width: auto;
-  padding: 0;
+  padding: 50px;
   background-size: contain;
   background-image: url("https://movietalkexpress.files.wordpress.com/2014/07/80s-action-heroes-preview.jpg");
 }
@@ -65,16 +64,16 @@ main {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-top: -200px;
+  justify-content: space-between;
+  margin-top: 50px;
   width: 32.5%;
-  padding-left: 50px;
-  margin-right: -50px;
-  margin-left: 100px;
+  max-width: 32.5%;
+  margin: 110px 355px 0 0;
+  text-align: right;
 }
 
 time {
-  font-size: 72px;
+  font-size: 25px;
   font-family: Nova Square;
   text-shadow: 4px 4px #E06666;
 }
@@ -82,13 +81,6 @@ time {
 .right {
   display: flex;
   flex-direction: column;
-  border-right: 11px solid #E06666;
-  clear: both;
-  margin-top: 95px;
-  width: 4%;
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
-  background-position: right;
   margin-right: -52px;
   margin-left: -245px;
   margin-bottom: 75px;
@@ -98,10 +90,24 @@ time {
 .three {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: auto;
-  width: 50px;
-  margin-top: 88px;
+  width: 6px;
+  margin-top: 105px;
+  margin-bottom: 80px;
+  background-color: #E06666;
+  min-width: 6px;
+}
+
+.firstTime {
+  margin-top: 17px;
+}
+.middleTime {
+  margin-top: 70px;
+}
+
+.bottomTime {
+  margin-bottom: 480px;
 }
 
 .icon1 {
@@ -110,8 +116,9 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin: -275px 0 0 -1px;
+  margin: 0 0 0 -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 .icon2 {
@@ -120,8 +127,9 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin-left: -1px;
+  margin: 80px 0 0 -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 .icon3 {
@@ -130,15 +138,18 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin-left: -1px;
+  margin: -0 0 390px -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 article {
   width: 60%;
+  padding-left: 0;
   padding: 75px;
   margin-left: -30px;
   margin-top: 25px;
+  min-width: 60%;
 }
 
 .recipe1 {
@@ -211,4 +222,18 @@ footer {
 }
 h4 {
   color: black;
+}
+
+@media all and (max-width: 600px) {
+  time {
+    font-size: smaller;
+  }
+
+  .left {
+    display: none;
+    width: 10%;
+    text-align: right;
+    margin-right: 110px;
+    padding: 0;
+  }
 }
