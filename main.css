@@ -11,11 +11,11 @@ body {
 }
 
 figcaption{
-  margin: 60px 0 0 -150px;
+  margin: 50px 0 0 -120px;
 }
 
 .odd {
-  margin: 71px 0 0 -178px;
+  margin: 40px 0 0 -115px;
 }
 
 body::after {
@@ -65,16 +65,16 @@ main {
 .left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin-top: -200px;
+  justify-content: space-between;
+  margin-top: 50px;
   width: 32.5%;
-  padding-left: 50px;
-  margin-right: -50px;
-  margin-left: 100px;
+  max-width: 32.5%;
+  margin: 110px 355px 0 0;
+  text-align: right;
 }
 
 time {
-  font-size: 72px;
+  font-size: 25px;
   font-family: Nova Square;
   text-shadow: 4px 4px #E06666;
 }
@@ -82,13 +82,6 @@ time {
 .right {
   display: flex;
   flex-direction: column;
-  border-right: 11px solid #E06666;
-  clear: both;
-  margin-top: 95px;
-  width: 4%;
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
-  background-position: right;
   margin-right: -52px;
   margin-left: -245px;
   margin-bottom: 75px;
@@ -98,10 +91,12 @@ time {
 .three {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: auto;
-  width: 50px;
-  margin-top: 88px;
+  width: 15px;
+  margin-top: 105px;
+  background-color: #E06666;
+  min-width: 1%;
 }
 
 .icon1 {
@@ -110,7 +105,7 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin: -275px 0 0 -1px;
+  margin: 0 0 0 -18px;
   border: 3px solid white;
 }
 
@@ -120,7 +115,7 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin-left: -1px;
+  margin: 80px 0 0 -18px;
   border: 3px solid white;
 }
 
@@ -130,15 +125,17 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin-left: -1px;
+  margin: -0 0 390px -18px;
   border: 3px solid white;
 }
 
 article {
   width: 60%;
+  padding-left: 0;
   padding: 75px;
   margin-left: -30px;
   margin-top: 25px;
+  min-width: 60%;
 }
 
 .recipe1 {
