@@ -44,13 +44,12 @@ header {
   flex-direction: row;
   font-family: Orbitron;
   color: white;
-  font-size: 40px;
+  font-size: 28px;
   text-shadow: 12px 12px red;
-  width: 100%;
   justify-content: center;
   border: 5px solid black;
   width: auto;
-  padding: 0;
+  padding: 50px;
   background-size: contain;
   background-image: url("https://movietalkexpress.files.wordpress.com/2014/07/80s-action-heroes-preview.jpg");
 }
@@ -93,10 +92,22 @@ time {
   flex-direction: column;
   justify-content: space-between;
   height: auto;
-  width: 15px;
+  width: 6px;
   margin-top: 105px;
+  margin-bottom: 80px;
   background-color: #E06666;
-  min-width: 1%;
+  min-width: 6px;
+}
+
+.firstTime {
+  margin-top: 17px;
+}
+.middleTime {
+  margin-top: 70px;
+}
+
+.bottomTime {
+  margin-bottom: 480px;
 }
 
 .icon1 {
@@ -105,8 +116,9 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin: 0 0 0 -18px;
+  margin: 0 0 0 -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 .icon2 {
@@ -115,8 +127,9 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin: 80px 0 0 -18px;
+  margin: 80px 0 0 -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 .icon3 {
@@ -125,8 +138,9 @@ time {
   background-size: 100% 100%;
   height: 50px;
   width: 50px;
-  margin: -0 0 390px -18px;
+  margin: -0 0 390px -24px;
   border: 3px solid white;
+  border-radius: 50%;
 }
 
 article {
@@ -208,4 +222,18 @@ footer {
 }
 h4 {
   color: black;
+}
+
+@media all and (max-width: 600px) {
+  time {
+    font-size: smaller;
+  }
+
+  .left {
+    display: none;
+    width: 10%;
+    text-align: right;
+    margin-right: 110px;
+    padding: 0;
+  }
 }
